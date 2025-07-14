@@ -48,15 +48,12 @@
 // █░░░░█░░░░░░░░░░░░▄▄██▀░░░░░░░░░░░░░░█▄░░░░░░░░░░██▀▀▀▀▀▀██▀▀▀█▀░░░░░░░░█▀░░░░░░░▄█░█▄░░▀█▄░░░░░░░░█
 // █░░░░█░░░░░░░░░░░███▀░░░░░░░░░░░░░░░░░█▄░░░░░░░░░░█▄░░░░░█░░░░█░░░░░░░▄█▀░░░░░░░▄█░░░█░░░░▀▄░░░░░░░█
 // █▄▄▄▄█▄▄▄▄▄▄▄▄▄▄██▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▄█▄▄▄▄▄█▄▄▄▄█▄▄▄▄▄▄▄█▄▄▄▄▄▄▄▄▄█▄▄▄▄█▄▄▄▄▄██▄▄▄▄▄▄█
-#include<iostream>
-#include<random>
-#include<ctime>
-#include<fstream>
+#include<bits/stdc++.h>
 using namespace std;
-const int TEST=369;
+const int TEST=369 ;
 ofstream inp;
-long long randumb(long long f,long long c){return rand()%(c-f+1)+f;}
-void generator(){
+long long rd(long long f,long long c){return rand()%(c-f+1)+f;}
+void inpgen(){
 
 }
 int main(){
@@ -64,11 +61,11 @@ int main(){
     #define NAME "nazunasdish"
     for(int test=1;test<=TEST;test++){
         inp.open(NAME".inp");
-        generator();
+        inpgen();
         inp.close();
         system(NAME".exe");
         system(NAME"brf.exe");
-        if(system("fc "NAME".out "NAME".ans")){
+        if(system("fc " NAME ".out " NAME ".ans")){
             cout<<"emcochackhong?";
             return 0;
         }
