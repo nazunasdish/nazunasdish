@@ -54,7 +54,7 @@ const int TEST=369 ;
 ofstream inp;
 long long rd(long long f,long long c){return rand()%(c-f+1)+f;}
 void inpgen(){
-
+    
 }
 int main(){
     srand(time(0));
